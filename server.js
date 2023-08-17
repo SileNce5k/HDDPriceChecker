@@ -2,7 +2,8 @@ const express = require('express');
 const fs = require('fs');
 const app = express();
 const port = 3001;
-
+const { addPricePerTB } = require('./HDDprices');
+addPricePerTB("HDD.json")
 function roundToQuarter(number) {
     return Math.round(number * 4) / 4;
 }

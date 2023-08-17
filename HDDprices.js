@@ -4,10 +4,6 @@ function roundToQuarter(number) {
 }
 function addPricePerTB(filePath){
     let data = fs.readFileSync(filePath, 'utf-8')
-        if (err) {
-            console.error('Error reading the file:', err);
-            return;
-        }
         const hardDrives = JSON.parse(data);
         for (let drive of hardDrives) {
             const pricePerTB = drive.price / drive.size;
