@@ -21,6 +21,9 @@ function currencyConverter(amount, fromCurrency, toCurrency) {
     if(fromCurrency === "NOK" && toCurrency === "USD"){
         convertedPrice = amount / USDInNOK;
     }
+    else if(fromCurrency === "USD" && toCurrency === "NOK"){
+        convertedPrice = amount * USDInNOK;
+    }
     return convertedPrice;
 
     
