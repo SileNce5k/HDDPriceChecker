@@ -43,13 +43,12 @@ app.get('/', (req, res) => {
         const hardDrives = JSON.parse(data);
         for (let drive of hardDrives) {
             const pricePerTB = drive.price / drive.size;
-            drive.pricePerTB = roundToQuarter(pricePerTB).toFixed(2);  // toFixed ensures we always have two decimal places
+            drive.pricePerTB = roundToQuarter(pricePerTB).toFixed(2);
             drive.price = drive.price.toFixed(2);
             drive.pricePerTBUSD = roundToQuarter(currencyConverter(drive.pricePerTB, "NOK", "USD")).toFixed(2);
             drive.priceUSD = roundToQuarter(currencyConverter(drive.price, "NOK", "USD")).toFixed(2);
         }
 
-        // Construct the HTML
         let html = `
         <html>
         <head>
@@ -118,7 +117,6 @@ app.get('/', (req, res) => {
 const bodyParser = require('body-parser');
 
 
-// This is middleware to help parse form submissions
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post('/add', (req, res) => {
@@ -145,7 +143,7 @@ app.post('/add', (req, res) => {
                 return;
             }
 
-            res.redirect('/');  // Redirect back to the main page
+            res.redirect('/');
         });
     });
 });
