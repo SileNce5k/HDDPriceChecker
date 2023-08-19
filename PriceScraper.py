@@ -4,6 +4,7 @@ import requests
 import logging
 import time
 from random import randint
+from datetime import datetime
 
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -53,6 +54,7 @@ for item in data:
 			if new_price and (not item.get('price') or item.get('price') != new_price):
 				logging.info(f"Updating price for {url} to {new_price}")
 				item['price'] = new_price
+				item['updateTime'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 			elif not new_price:
 				logging.warning(f"No price scraped for {url}")
 	wait_time = randint(1, 5) 
