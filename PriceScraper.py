@@ -63,5 +63,5 @@ for item in data:
 
 
 
-with open(HDDFile, 'w') as file:
+with open(HDDFile, 'w', newline='') as file:
 	json.dump(data, file, indent=4)
