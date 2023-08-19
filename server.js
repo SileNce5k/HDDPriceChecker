@@ -17,7 +17,7 @@ app.use(express.static('public'));
 
 
 function currencyConverter(amount, fromCurrency, toCurrency) {
-    const USDInNOK = 10.56;
+    const USDInNOK = 10.66;
     let convertedPrice;
     if(fromCurrency === "NOK" && toCurrency === "USD"){
         convertedPrice = amount / USDInNOK;
