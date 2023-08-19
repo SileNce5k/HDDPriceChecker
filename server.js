@@ -48,6 +48,9 @@ app.get('/', (req, res) => {
             drive.price = drive.price.toFixed(2);
             drive.pricePerTBUSD = roundToQuarter(currencyConverter(drive.pricePerTB, "NOK", "USD")).toFixed(2);
             drive.priceUSD = roundToQuarter(currencyConverter(drive.price, "NOK", "USD")).toFixed(2);
+            if(!drive.updateTime){
+                drive.updateTime = "Unavailable";
+            }
         }
 
         let html = `
@@ -68,6 +71,7 @@ app.get('/', (req, res) => {
                     <th>Price per TB</a></th>
                     <th>Price (USD)</a></th>
                     <th>Price per TB (USD)</a></th>
+                    <th>Updated</a></th>
                     <th>URL</a></th>
                 </tr>
             </thead>
@@ -85,7 +89,8 @@ app.get('/', (req, res) => {
                     <td>${drive.size} TB</td>
                     <td>${formatNumber(drive.pricePerTB)} kr</td>
                     <td>$${drive.priceUSD}</td>
-                    <td>$${drive.pricePerTBUSD}</td> 
+                    <td>$${drive.pricePerTBUSD}</td>
+                    <td>${drive.updateTime}</td>
                     <td><a href="${drive.url}">here</a></td>
                 </tr>
             `;
