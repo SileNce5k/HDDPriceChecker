@@ -66,8 +66,8 @@ app.get('/', (req, res) => {
             <thead>
                 <tr>
                     <th>Name</a></th>
-                    <th>Price</a></th>
                     <th>Size</a></th>
+                    <th>Price</a></th>
                     <th>Price per TB</a></th>
                     <th>Price (USD)</a></th>
                     <th>Price per TB (USD)</a></th>
@@ -85,8 +85,8 @@ app.get('/', (req, res) => {
             html += `
                 <tr>
                     <td>${drive.name}</td>
-                    <td>${formatNumber(drive.price)} kr</td>
                     <td>${drive.size} TB</td>
+                    <td>${formatNumber(drive.price)} kr</td>
                     <td>${formatNumber(drive.pricePerTB)} kr</td>
                     <td>$${drive.priceUSD}</td>
                     <td>$${drive.pricePerTBUSD}</td>
