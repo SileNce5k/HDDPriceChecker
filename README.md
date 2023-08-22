@@ -18,7 +18,6 @@ Other things I want to do:
 * When I add more sites, add the ability to choose which store to use to
     * Default to the cheapest option
 * Automatic currency rate updating
-* Use SQL instead of JSON
 * Add a link to another item
 * Merge to only use one language (probably javascript)
 * My own CSS
