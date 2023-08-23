@@ -17,7 +17,7 @@ app.use(express.static('public'));
 
 
 function currencyConverter(amount, fromCurrency, toCurrency) {
-    const USDInNOK = 10.66;
+    const USDInNOK = 10.63;
     let convertedPrice;
     if(fromCurrency === "NOK" && toCurrency === "USD"){
         convertedPrice = amount / USDInNOK;
@@ -91,7 +91,7 @@ app.get('/', (req, res) => {
                     <td>$${drive.priceUSD}</td>
                     <td>$${drive.pricePerTBUSD}</td>
                     <td>${drive.updateTime}</td>
-                    <td><a href="${drive.url}">here</a></td>
+                    <td><a href="${drive.url}">url</a></td>
                 </tr>
             `;
         }
