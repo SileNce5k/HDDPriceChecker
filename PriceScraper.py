@@ -28,7 +28,7 @@ def get_price(url):
 	soup = BeautifulSoup(response.content, 'html.parser')
 	if "dustinhome" in url:
 		price_tag = soup.find('span', class_='c-price')
-	else:
+    else:
 		logging.warning(f"No scraper exists for {url}")
 		return None
 	if price_tag:
@@ -38,7 +38,7 @@ def get_price(url):
 		return None
 
 
-
+priceUpdatedCount = 0
 
 for item in data:
 
@@ -53,6 +53,7 @@ for item in data:
 			new_price = float(''.join([char for char in lprice if char.isdigit()]))
 			if new_price and (not item.get('price') or item.get('price') != new_price):
 				logging.info(f"Updating price for {url} to {new_price}")
+				priceUpdatedCount += 1
 				item['price'] = new_price
 				item['updateTime'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 			elif not new_price:
@@ -61,6 +62,7 @@ for item in data:
 	print(f"Waiting {wait_time} seconds")
 	time.sleep(wait_time)
 
+print(f"Updated price on {priceUpdatedCount} items.")
 
 
 with open(HDDFile, 'w', newline='') as file:
