@@ -28,7 +28,7 @@ def get_price(url):
 	soup = BeautifulSoup(response.content, 'html.parser')
 	if "dustinhome" in url:
 		price_tag = soup.find('span', class_='c-price')
-    else:
+	else:
 		logging.warning(f"No scraper exists for {url}")
 		return None
 	if price_tag:
