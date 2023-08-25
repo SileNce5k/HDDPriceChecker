@@ -62,7 +62,7 @@ for item in data:
 	print(f"Waiting {wait_time} seconds")
 	time.sleep(wait_time)
 
-print(f"Updated price on {priceUpdatedCount} items.")
+print(f"Updated price on {priceUpdatedCount} item(s).")
 
 
 with open(HDDFile, 'w', newline='') as file:
