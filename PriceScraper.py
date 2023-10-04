@@ -39,7 +39,7 @@ def get_price(url):
 
 
 priceUpdatedCount = 0
-
+logging.info(f"Scraping price for {len(data)} items")
 for item in data:
 
 	urls = item.get('url')
