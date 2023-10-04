@@ -1,23 +1,23 @@
 [
     {
         "name": "WD Red Plus",
-        "price": 709.0,
+        "price": 720,
         "url": [
             "https://www.dustinhome.no/product/5010820185/red-plus"
         ],
         "size": 1,
-        "pricePerTB": 717,
-        "updateTime": "2023-08-24 10:27:51"
+        "pricePerTB": 720,
+        "updateTime": "2023-08-25 11:01:35"
     },
     {
         "name": "WD Red Plus",
-        "price": 1103.0,
+        "price": 1049,
         "size": 2,
         "url": [
             "https://www.dustinhome.no/product/5011222640/red-plus"
         ],
-        "pricePerTB": 548.5,
-        "updateTime": "2023-08-24 10:27:54"
+        "pricePerTB": 524.5,
+        "updateTime": "2023-08-25 11:01:42"
     },
     {
         "name": "WD Red Plus",
@@ -50,42 +50,42 @@
     },
     {
         "name": "WD Red Plus",
-        "price": 2431.0,
+        "price": 2442,
         "size": 8,
         "url": [
             "https://www.dustinhome.no/product/5011276300/red-plus"
         ],
         "pricePerTB": 305.25,
-        "updateTime": "2023-08-24 10:28:16"
+        "updateTime": "2023-08-25 11:01:57"
     },
     {
         "name": "WD Red Plus",
-        "price": 3457.0,
+        "price": 3434,
         "size": 10,
         "url": [
             "https://www.dustinhome.no/product/5011222652/red-plus"
         ],
-        "pricePerTB": 343.75,
-        "updateTime": "2023-08-24 10:28:19"
+        "pricePerTB": 343.5,
+        "updateTime": "2023-08-25 11:02:02"
     },
     {
         "name": "WD Red Plus",
-        "price": 3431.0,
+        "price": 3451,
         "size": 12,
         "url": [
             "https://www.dustinhome.no/product/5011222653/red-plus"
         ],
-        "pricePerTB": 285,
-        "updateTime": "2023-08-24 10:28:25"
+        "pricePerTB": 287.5,
+        "updateTime": "2023-08-25 11:02:06"
     },
     {
         "name": "WD Red Plus",
-        "price": 4999.0,
+        "price": 4999,
         "size": 14,
         "url": [
             "https://www.dustinhome.no/product/5011222654/red-plus"
         ],
-        "pricePerTB": 342.75,
+        "pricePerTB": 357,
         "updateTime": "2023-08-24 10:28:30"
     },
     {
@@ -100,23 +100,23 @@
     },
     {
         "name": "WD Red Pro",
-        "price": 1675.0,
+        "price": 1683,
         "size": 4,
         "url": [
             "https://www.dustinhome.no/product/5011069861/red-pro"
         ],
-        "pricePerTB": 421.25,
-        "updateTime": "2023-08-24 10:28:42"
+        "pricePerTB": 420.75,
+        "updateTime": "2023-08-25 11:02:20"
     },
     {
         "name": "WD Red Pro ",
-        "price": 2539.0,
+        "price": 2549,
         "size": 6,
         "url": [
             "https://www.dustinhome.no/product/5011069860/red-pro"
         ],
-        "pricePerTB": 423.25,
-        "updateTime": "2023-08-24 10:28:46"
+        "pricePerTB": 424.75,
+        "updateTime": "2023-08-25 11:02:27"
     },
     {
         "name": "WD Red Pro",
@@ -129,53 +129,53 @@
     },
     {
         "name": "WD Red Pro",
-        "price": 4186.0,
+        "price": 4202,
         "size": 12,
         "url": [
             "https://www.dustinhome.no/product/5011159924/red-pro-nas"
         ],
-        "pricePerTB": 350.5,
-        "updateTime": "2023-08-24 10:28:52"
+        "pricePerTB": 350.25,
+        "updateTime": "2023-08-25 11:02:35"
     },
     {
         "name": "WD Red Pro",
-        "price": 4866.0,
+        "price": 4873,
         "size": 14,
         "url": [
             "https://www.dustinhome.no/product/5011159922/red-pro-nas"
         ],
-        "pricePerTB": 345.75,
-        "updateTime": "2023-08-24 10:28:54"
+        "pricePerTB": 348,
+        "updateTime": "2023-08-25 11:02:39"
     },
     {
         "name": "WD Red Pro",
-        "price": 4629.0,
+        "price": 4640,
         "size": 16,
         "url": [
             "https://www.dustinhome.no/product/5011230705/red-pro"
         ],
-        "pricePerTB": 290.25,
-        "updateTime": "2023-08-24 10:28:59"
+        "pricePerTB": 290,
+        "updateTime": "2023-08-25 11:02:41"
     },
     {
         "name": "WD Red Pro",
-        "price": 5591.0,
+        "price": 5599,
         "size": 18,
         "url": [
             "https://www.dustinhome.no/product/5011230711/red-pro"
         ],
-        "pricePerTB": 309.75,
-        "updateTime": "2023-08-24 10:29:04"
+        "pricePerTB": 311,
+        "updateTime": "2023-08-25 11:02:47"
     },
     {
         "name": "WD Red Pro",
-        "price": 6818.0,
+        "price": 6828,
         "size": 20,
         "url": [
             "https://www.dustinhome.no/product/5011283021/red-pro"
         ],
-        "pricePerTB": 336,
-        "updateTime": "2023-08-25 10:15:40"
+        "pricePerTB": 341.5,
+        "updateTime": "2023-08-25 11:02:50"
     },
     {
         "name": "WD Red Pro",
