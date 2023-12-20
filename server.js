@@ -17,7 +17,7 @@ app.use(express.static('public'));
 
 
 function currencyConverter(amount, fromCurrency, toCurrency) {
-    const USDInNOK = 10.93;
+    const USDInNOK = 11.21;
     let convertedPrice;
     if(fromCurrency === "NOK" && toCurrency === "USD"){
         convertedPrice = amount / USDInNOK;
@@ -78,7 +78,7 @@ app.get('/', (req, res) => {
             <tbody>
         
         </body>
-        </html>
+        
         `;
 
         for (let drive of hardDrives) {
@@ -111,7 +111,9 @@ app.get('/', (req, res) => {
             URL: <input type="text" name="url" required><br><br>
             <input type="submit" value="Add Drive">
         </form>
-        `;
+        </html>
+        `
+        ;
 
         
 
